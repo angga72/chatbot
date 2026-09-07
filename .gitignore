@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets — JANGAN pernah commit
+.env
+*.env
+!*.env.example
+supabase_conn.txt
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Streamlit
+.streamlit/secrets.toml
