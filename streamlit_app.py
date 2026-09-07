@@ -7,7 +7,7 @@ import uuid
 
 import streamlit as st
 
-from config import DEFAULT_MODEL
+from config import DEFAULT_MODEL, status as config_status
 from db import save_message, load_history, clear_history, get_all_sessions, save_feedback, ensure_schema
 from knowledge import load_sheet_rows, search_rows, format_rows_for_prompt
 from llm import stream_chat, build_system_prompt
@@ -113,6 +113,21 @@ with st.sidebar:
     if st.button("Muat ulang data sheet", use_container_width=True):
         st.session_state.sheet_rows = None  # paksa refresh
         st.rerun()
+
+    # ---------------- Panel diagnostik konfigurasi ----------------
+    with st.expander("Status konfigurasi"):
+        cfg = config_status()
+        for key, ok in cfg.items():
+            label = "terisi" if ok else "KOSONG"
+            st.write(f"- {key}: {label}")
+        if not cfg.get("DATABASE_URL"):
+            st.markdown(
+                "**Cara set secrets (Cloud):** Settings -> Secrets, paste isi "
+                "`.streamlit/secrets.toml`. Semua key harus root-level "
+                "(tanpa `[section]`) biar kebaca sebagai env var."
+            )
+        if not cfg.get("DEEPSEEK_API_KEY"):
+            st.markdown("Isi `DEEPSEEK_API_KEY` di secrets dashboard.")
 
 # ---------------- Muat knowledge (Google Sheet) ----------------
 def get_sheet_data():

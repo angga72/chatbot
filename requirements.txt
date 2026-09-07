@@ -3,3 +3,4 @@ openai>=1.60
 psycopg2-binary>=2.9
 requests>=2.31
 python-dotenv>=1.0
+tomli>=2.0; python_version < "3.11"
