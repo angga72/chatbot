@@ -115,18 +115,18 @@ div.stButton > button[kind="secondary"]:hover {
 [data-testid="stChatMessageContent"] p:last-child { margin-bottom: 0; }
 
 /* bubble user -> hijau, rata kanan */
-[data-testid="stChatMessage"]:has(img[src*="avatar-user"]) { flex-direction: row-reverse; }
-[data-testid="stChatMessage"]:has(img[src*="avatar-user"]) [data-testid="stChatMessageContent"] {
+[data-testid="stChatMessage"]:has(img[alt="user avatar"]) { flex-direction: row-reverse; }
+[data-testid="stChatMessage"]:has(img[alt="user avatar"]) [data-testid="stChatMessageContent"] {
     background: #14532D; border-color: #14532D; color: #FFFFFF;
     border-radius: 16px 16px 4px 16px;
 }
-[data-testid="stChatMessage"]:has(img[src*="avatar-user"]) [data-testid="stChatMessageContent"] p { color: #FFFFFF; }
+[data-testid="stChatMessage"]:has(img[alt="user avatar"]) [data-testid="stChatMessageContent"] p { color: #FFFFFF; }
 
 /* timestamp di dalam bubble */
 [data-testid="stChatMessage"] [data-testid="stChatMessageContent"] [data-testid="stCaptionContainer"] {
     color: #9AA7A0; font-size: 11px; margin-top: 5px;
 }
-[data-testid="stChatMessage"]:has(img[src*="avatar-user"]) [data-testid="stChatMessageContent"] [data-testid="stCaptionContainer"] {
+[data-testid="stChatMessage"]:has(img[alt="user avatar"]) [data-testid="stChatMessageContent"] [data-testid="stCaptionContainer"] {
     color: rgba(255,255,255,.7);
 }
 
