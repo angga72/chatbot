@@ -19,3 +19,8 @@ supabase_conn.txt
 
 # Streamlit
 .streamlit/secrets.toml
+
+# helper lokal (bukan bagian app)
+shoot.py
+groq_vision.py
+shots/
