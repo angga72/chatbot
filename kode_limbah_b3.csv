@@ -1,136 +1,136 @@
 kode_limbah,nama_limbah,kategori,karakteristik,sumber_limbah,bentuk_limbah,kemasan_angkut,info_tambahan
-A101d,,,,,,,
-A102d,,,,,,,
-A103d,,,,,,,
-A104d,,,,,,,
-A105d,,,,,,,
-A106d,,,,,,,
-A107d,,,,,,,
-A108d,,,,,,,
-A109c,,,,,,,
-A109d,,,,,,,
-A110c,,,,,,,
-A110d,,,,,,,
-A111d,,,,,,,
-A304-3,,,,,,,
-A305-2,,,,,,,
-A306-2,,,,,,,
-A307-1,,,,,,,
-A307-2,,,,,,,
-A309-3,,,,,,,
-A309-4,,,,,,,
-A310-1,,,,,,,
-A310-3,,,,,,,
-A312-1,,,,,,,
-A312-2,,,,,,,
-A313-3,,,,,,,
-A317-1,,,,,,,
-A317-2,,,,,,,
-A317-3,,,,,,,
-A318-1,,,,,,,
-A318-2,,,,,,,
-A323-1,,,,,,,
-A323-2,,,,,,,
-A323-3,,,,,,,
-A324-2,,,,,,,
-A324-3,,,,,,,
-A324-6,,,,,,,
-A324-7,,,,,,,
-A324-8,,,,,,,
-A325-1,,,,,,,
-A327-1,,,,,,,
-A337-1,,,,,,,
-A337-2,,,,,,,
-A337-3,,,,,,,
-A337-4,,,,,,,
-A337-5,,,,,,,
-A338-1,,,,,,,
-A338-2,,,,,,,
-A338-3,,,,,,,
-A339-1,,,,,,,
-A341-1,,,,,,,
-A345-1,,,,,,,
-A345-2,,,,,,,
-A346-1,,,,,,,
-A347-1,,,,,,,
-A347-2,,,,,,,
-A352-1,,,,,,,
-A352-2,,,,,,,
-B102d,,,,,,,
-B104d,,,,,,,
-B105d,,,,,,,
-B106d,,,,,,,
-B107d,,,,,,,
-B108d,,,,,,,
-B109d,,,,,,,
-B110d,,,,,,,
-B301-1,,,,,,,
-B301-2,,,,,,,
-B301-3,,,,,,,
-B301-6,,,,,,,
-B301-7,,,,,,,
-B304-1,,,,,,,
-B305-1,,,,,,,
-B305-5,,,,,,,
-B306-1,,,,,,,
-B306-4,,,,,,,
-B307-1,,,,,,,
-B309-1,,,,,,,
-B309-3,,,,,,,
-B310-1,,,,,,,
-B311-2,,,,,,,
-B312-5,,,,,,,
-B313-2,,,,,,,
-B313-3,,,,,,,
-B313-5,,,,,,,
-B313-6,,,,,,,
-B313-7,,,,,,,
-B313-8,,,,,,,
-B314-1,,,,,,,
-B314-3,,,,,,,
-B314-5,,,,,,,
-B316-4,,,,,,,
-B316-5,,,,,,,
-B317-3,,,,,,,
-B321-1,,,,,,,
-B321-3,,,,,,,
-B321-4,,,,,,,
-B321-7,,,,,,,
-B322-2,,,,,,,
-B322-3,,,,,,,
-B323-1,,,,,,,
-B323-2,,,,,,,
-B323-3,,,,,,,
-B323-4,,,,,,,
-B323-5,,,,,,,
-B324-1,,,,,,,
-B328-3,,,,,,,
-B328-4,,,,,,,
-B328-6,,,,,,,
-B339-2,,,,,,,
-B344-1,,,,,,,
-B344-2,,,,,,,
-B345-1,,,,,,,
-B347-1,,,,,,,
-B347-2,,,,,,,
-B347-3,,,,,,,
-B351-3,,,,,,,
-B351-4,,,,,,,
-B353-1,,,,,,,
-B354-2,,,,,,,
-B354-3,,,,,,,
-B355-2,,,,,,,
-B401,,,,,,,
-B402,,,,,,,
-B405,,,,,,,
-B407,,,,,,,
-B409,,,,,,,
-B410,,,,,,,
-B411,,,,,,,
-B413,,,,,,,
-B415,,,,,,,
-B417,,,,,,,
-A108c,,,,,,,
-B322-1,,,,,,,
-A322-3,,,,,,,
-B324-3,,,,,,,
+A101d,"Limbah yang mengandung senyawa POPs dan UPOPs antara lain polychlorinated biphenyls (PCBs), DDT, PCDD, PCDF",1,,,,,Kategori bahaya 1 (PP 101/2014)
+A102d,Aki/Baterai Bekas,1,Beracun,,,"Drum, Jumbo Bag",Kategori bahaya 1 (PP 101/2014)
+A103d,"Debu dan fiber asbes antara lain asbes biru (crocidolite), asbes coklat (amosite), asbes abu-abu (anthrophyllite)",1,,,,,Kategori bahaya 1 (PP 101/2014)
+A104d,Air lindi yang dihasilkan dari fasilitas penimbusan akhir (landfill) Limbah B3,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A105d,Limbah dan/atau buangan produk yang terkontaminasi dan/atau mengandung merkuri (Hg) dan/atau senyawanya,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A106d,Limbah dari Laboratorium yang Mengandung B3,1,Beracun,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A107d,Pelarut Bekas Lainnya yang belum dikodifikasi,1,Cairan Mudah Menyala,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A108d,Limbah Terkontaminasi B3,1,Beracun,,,Cairan Mudah Menyala,Kategori bahaya 1 (PP 101/2014)
+A109c,Asam Sulfat,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A109d,Limbah Asam Lainnya yang Belum Dikodifikasi,1,Korosif,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A110c,Asam Klorida,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A110d,Limbah karbon aktif yang mengandung zat pencemar,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A111d,Refrigerant bekas dari peralatan elekktronik,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A304-3,Limbah Minyak Resin(Terpentin),1,Mudah Menyala,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A305-2,"Residu Produksi atau Reaksi Pemurnian Polimer, Absorben, Fraksinasi",1,Beracun,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A306-2,Residu akhir (tar),1,,,,,Kategori bahaya 1 (PP 101/2014)
+A307-1,Sludge dari Proses Produksi dan Fasilitas Penyimpanan Minyak Bumi atau Gas Alam [Kilang Minyak dan Gas Bumi],1,Beracun,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A307-2,Residu dasar tangki,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A309-3,Spent pickle liquor,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A309-4,Sludge spent pickle liquor,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A310-1,Larutan Asam Alkali dan Residunya [Operasi Penyempurnaan baja],1,Korosif`,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A310-3,Larutan Pengolahan Bekas,1,Beracun,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A312-1,Larutan Asam Bekas[Peleburan dan Pemurnian Tembaga],1,Korosif,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A312-2,Sludge dari acid plant blowdown,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A313-3,Anodizing Sludge,1,Beracun,,,Jumbo Bag,Kategori bahaya 1 (PP 101/2014)
+A317-1,Larutan oksalat dan sludge,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A317-2,Larutan permanganat (pickling),1,,,,,Kategori bahaya 1 (PP 101/2014)
+A317-3,"Residu Asam Pickling [Proses Logam non-Ferro antara lain Al, Zn, dan Cu Alloys]",1,Korosif,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A318-1,Larutan Asam Bekas[Industri Peleburan Aki Bekas],1,Korosif,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A318-2,Sludge IPAL,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A323-1,"Pelarut Bekas dan Cairan Organik dan Anorganik Bekas Pencucian (Cleaning)[Manufaktur, Perakitan, dan Pemeliharaan kendaraan dan Mesin]",1,Cairan Mudah Menyala,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A323-2,"Sludge Proses Produksi yang Meliputi Manufakturing, Perakitan, dan Pemeliharaan",1,Beracun,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A323-3,"Residu Proses Produksi yang Meliputi Manufakturing, Perakitan, dan Pemeliharaan",1,Beracun,,,Jumbo Bag,Kategori bahaya 1 (PP 101/2014)
+A324-2,Larutan Bekas dari Kegiatan Pengolahan,1,Mudah Menyala,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A324-3,Larutan Asam Pickling,1,Korosif,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A324-6,Larutan Bekas Degreasing,1,Korosif,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A324-7,Residu dan Larutan Batch,1,Beracun,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A324-8,"Spent plating solutions antara lain Cr (hexavalent), Pb, Ni, As, Cu, Zn, Cd, Fe, Sn atau kombinasi logam tersebut",1,,,,,Kategori bahaya 1 (PP 101/2014)
+A325-1,Limbah Cat dan Varnish mengandung Pelarut Organik [Cat Mencakup Kegiatan Varnish dan Pelapisan dengan Bahan Lainnya],1,Beracun,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A327-1,Larutan Asam Bekas[Baterai Sel Basah],1,Korosif,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A337-1,Limbah Klinis memiliki karakteristik infeksius [Rumah Sakit dan Fasilitas Pelayanan Kesehatan],1,Infeksius,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A337-2,Produk Farmasi Kadaluwarsa,1,Beracun,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A337-3,Bahan Kimia Kadaluwarsa,1,Beracun,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A337-4,Peralatan Laboratorium Terkontaminasi B3,1,Beracun,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A337-5,"Peralatan medis mengandung logam berat, termasuk merkuri (Hg), kadmium (Cd), dan sejenisnya",1,,,,,Kategori bahaya 1 (PP 101/2014)
+A338-1,Bahan Kimia Kadaluwarsa[Laboratorium Riset dan Komersial],1,Beracun,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A338-2,Peralatan Laboratorium Terkontaminasi B3,1,Beracun,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A338-3,Residu Sampel Limbah B3,1,Beracun,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A339-1,"Larutan Developer, Fixer, dan Bleach Bekas [Fotografi]",1,Beracun,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A341-1,"Residu Produksi dan Konsentrat [Sabun Deterjen, Produk Pembersih, Desinfektan, atau Kosmetik]",1,Beracun,,,"Drum Besi, Jumbo Bag",Kategori bahaya 1 (PP 101/2014)
+A345-1,Emulsi Minyak dari Proses cutting dan Minyak Pendingin [Metal dan Plastic Shaping],1,Beracun,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A345-2,"Sludge Logam antara lain Berupa Serbuk, Gram dari Proses Metal Shaping yang Mengandung Minyak",1,Beracun,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+A346-1,Larutan kaustik bekas,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A347-1,Fly ash insinerator [Pengoperasi insenerator limbah],1,,,,,Kategori bahaya 1 (PP 101/2014)
+A347-2,Slag atau bottom ash insinerator,1,,,,,Kategori bahaya 1 (PP 101/2014)
+A352-1,"Alkali, Pelarut Asam dan/atau Larutan Oksidator yang Terkontaminasi Logam, Minyak, Gemuk [Chemical atau Industrial Cleaning]",1,Korosif,,,Drum Plastik,Kategori bahaya 1 (PP 101/2014)
+A352-2,Residu dari Kegiatan Pembersihan,1,Beracun,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+B102d,Debu dan fiber asbes asbes putih (chrysotile),2,,,,,Kategori bahaya 2 (PP 101/2014)
+B104d,Kemasan bekas B3,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B105d,"Minyak pelumas bekas antara lain minyak pelumas bekas hidrolik, mesin, gear, lubrikasi, insulasi, heat transmission, grit chambers, separator, dan/atau campurannya",2,,,,,Kategori bahaya 2 (PP 101/2014)
+B106d,Limbah resin atau penukar ion,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B107d,"Limbah elektronik termasuk cathode ray tube (CRT), lampu TL, printed circuit board (PCB), karet kawat (wire rubber)",2,,,,,Kategori bahaya 2 (PP 101/2014)
+B108d,Sludge instalasi pengolahan air Limbah (IPAL) dari fasilitas IPAL terpadu pada kawasan industri,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B109d,Filter bekas dari fasilitas pengendalian pencemaran udara,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B110d,Kain majun bekas (used rags) dan yang sejenis,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B301-1,Limbah Karbon Aktif Selain Limbah Karbon Aktif dengan Kode Limbah A110d [Pupuk dan Bahan Senyawa Nitrogen],2,Beracun,,,"Drum Besi, Jumbo Bag",Kategori bahaya 2 (PP 101/2014)
+B301-2,Terak (slag) mengandung fosfor dari proses yang menggunakan teknologi electric furnace,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B301-3,Katalis Bekas,2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B301-6,Limbah Iron Sponge yang Digunakan pada Unit Desulfurisasi,2,Beracun,,,"Drum Besi, Jumbo Bag",Kategori bahaya 2 (PP 101/2014)
+B301-7,Sludge IPAL,2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B304-1,"Katalis Bekas [Resin Adesif Fenol Formaldehida (PF), Urea Formaldehida(UF), Melamin Formaldehida(MF)]",2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B305-1,Katalis Bekas [Polimer],2,,,,,Kategori bahaya 2 (PP 101/2014)
+B305-5,Sludge IPAL,2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B306-1,Katalis Bekas [Petrokimia Industri yang Menghasilkan Produk Organik],2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B306-4,Sludge IPAL,2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B307-1,Katalis Bekas [Kilang Minyak dan Gas Bumi],2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B309-1,Dros dari Peleburan [Peleburan Besi dan Tembaga],2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B309-3,Debu Kupola,2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B310-1,Sludge IPAL [Operasi Penyempurnaan Baja],2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B311-2,Sludge dari IPAL,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B312-5,Sludge IPAL,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B313-2,Slag dari Proses Produksi Primer dan Sekunder,2,Beracun,,,"Drum Besi, Jumbo Bag",Kategori bahaya 2 (PP 101/2014)
+B313-3,Dross Hitam dari Produksi Primer dan/atau Sekunder,2,Beracun,,,"Drum Besi, Jumbo Bag",Kategori bahaya 2 (PP 101/2014)
+B313-5,Limbah dari Proses Skimming selain Limbah dengan Kode Limbah A313-1,2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B313-6,Debu dan/atau Sludge dari Fasilitas Pengendalian Pencemaran Udara,2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B313-7,Sludge dan filter cakes dari gas treatment,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B313-8,Sludge IPAL,2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B314-1,Slag dan Dross yang Dihasilkan dari Proses Produksi Primer dan/atau Sekunder [Peleburan dan Penyempurnaan Seng(Zn)],2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B314-3,Limbah dari Proses Skimming selain Limbah dengan Kode Limbah A314-1,2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B314-5,Sludge dari IPAL,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B316-4,Sludge dan filter cakes dari gas treatment,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B316-5,Sludge dari IPAL,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B317-3,Sludge IPAL,2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B321-1,Sludge mengandung tinta dari proses produksi dan penyimpanannya [Tinta],2,,,,,Kategori bahaya 2 (PP 101/2014)
+B321-3,Residu dari Proses Pencucian,2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B321-4,Kemasan Bekas Tinta,2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B321-7,Waste etching solution,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B322-2,Limbah dari proses finishing yang mengandung pelarut organic [tekstil],2,,,,,Kategori bahaya 2 (PP 101/2014)
+B322-3,Sludge IPAL,2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B323-1,"Sisa proses blasting [Manufaktur, perakitan, dan pemeliharaan kendaraan dan mesin",2,,,,,Kategori bahaya 2 (PP 101/2014)
+B323-2,"Sludge Painting [Manufaktur, Perakitan, dan Pemeliharaan Kendaraan dan Mesin]",2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B323-3,Potongan PCB tersolder,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B323-4,Scarp Timah Solder,2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B323-5,Sludge IPAL,2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B324-1,"Dross, Slag [Elektroplating dan Galvanis]",2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B328-3,Residu solder dan fluxnya [Perakitan komponen elektronik atau peralatan elektronik],2,,,,,Kategori bahaya 2 (PP 101/2014)
+B328-4,Printed circuit board (PCB),2,,,,,Kategori bahaya 2 (PP 101/2014)
+B328-6,Sludge dari IPAL [Perakitan Komponen Elekltronika atau Peralatan Elektrnik],2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B339-2,Tinta Toner [Fotografi],2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B344-1,Sludge dari proses pengolahan metal hardening,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B344-2,Sludge IPAL,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B345-1,Sludge dari Proses Plastic Shaping [Metal dan Plastic Shaping],2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+B347-1,Residu pengolahan flue gas [Pengoperasi insenerator limbah],2,,,,,Kategori bahaya 2 (PP 101/2014)
+B347-2,Filter & absorban bekas,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B347-3,Sludge IPAL [Lengoperasian Insinerator Limbah],2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B351-3,Sludge Oil Treatment dan/atau Penyimpanan [Pulp dan Kertas],2,Beracun,,,"Drum Besi, Jumbo Bag",Kategori bahaya 2 (PP 101/2014)
+B351-4,Sludge IPAL Pembuatan Produk Kertas Deinking,2,Beracun,,,"Drum Besi, Jumbo Bag",Kategori bahaya 2 (PP 101/2014)
+B353-1,Toner Bekas [Fotokopi],2,Beracun,,,"Drum Besi, Jumbo Bag",Kategori bahaya 2 (PP 101/2014)
+B354-2,Gelas Plastik dan Kayu yang Terkontaminasi B3 [Semua Jenis Industri Konstruksi],2,Beracun,,,"Drum Besi, Jumbo Bag",Kategori bahaya 2 (PP 101/2014)
+B354-3,Limbah Logam yang Terkontaminasi B3,2,Beracun,,,"Drum Besi, Jumbo Bag",Kategori bahaya 2 (PP 101/2014)
+B355-2,Baterai Bekas,2,Beracun,,,"Drum Besi, Jumbo Bag",Kategori bahaya 2 (PP 101/2014)
+B401,Copper Slag,2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B402,Steel slag,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B405,Iron Concentrate,2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B407,Debu Besi/Baja,2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B409,Fly Ash,2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B410,Bottom Ash,2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+B411,Sludge IPAL,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B413,Spent bleaching earth,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B415,Kapur (CaCO3) Proses pembuatan pupuk amonium sulfat (zwavelzuur ammonia) pada industri pupuk,2,,,,,Kategori bahaya 2 (PP 101/2014)
+B417,Refraktori Bekas yang Dihasilkan dari Fasilitas Termal,2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
+A108c,Natrium Hidroksida,1,,,,,Kategori bahaya 1 (PP 101/2014)
+B322-1,Dyestuffs dan Pigment Mengandung Bahan Kimia Berbahaya [Tekstil],2,Beracun,,,Drum Besi,Kategori bahaya 2 (PP 101/2014)
+A322-3,Dyestuffs dan Pigment Mengandung Logam Berat,1,Beracun,,,Drum Besi,Kategori bahaya 1 (PP 101/2014)
+B324-3,Sludge IPAL,2,Beracun,,,Jumbo Bag,Kategori bahaya 2 (PP 101/2014)
