@@ -122,9 +122,19 @@ div.stButton > button[kind="secondary"]:hover {
 }
 [data-testid="stChatMessage"]:has(img[alt="user avatar"]) [data-testid="stChatMessageContent"] p { color: #FFFFFF; }
 
-/* timestamp di dalam bubble */
-[data-testid="stChatMessage"] [data-testid="stChatMessageContent"] [data-testid="stCaptionContainer"] {
-    color: #9AA7A0; font-size: 11px; margin-top: 5px;
+/* timestamp di dalam bubble
+   FIX kepotong: layout st.caption Streamlit collapse (~6px) padahal teks render ~17px,
+   akibatnya jam nembus keluar batas bawah bubble. Paksa tinggi asli biar bubble nutupin. */
+[data-testid="stChatMessageContent"] [data-testid="stMarkdown"]:has([data-testid="stCaptionContainer"]) {
+    height: auto !important; min-height: 17px !important;
+}
+[data-testid="stChatMessageContent"] [data-testid="stVerticalBlock"]:has([data-testid="stCaptionContainer"]) {
+    height: auto !important;
+}
+[data-testid="stChatMessageContent"] [data-testid="stCaptionContainer"] {
+    display: block !important; height: auto !important; min-height: 16px !important;
+    line-height: 1.4 !important; margin: 4px 0 0 0 !important;
+    color: #9AA7A0; font-size: 11px;
 }
 [data-testid="stChatMessage"]:has(img[alt="user avatar"]) [data-testid="stChatMessageContent"] [data-testid="stCaptionContainer"] {
     color: rgba(255,255,255,.7);
