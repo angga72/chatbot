@@ -10,7 +10,13 @@ from datetime import datetime
 
 import streamlit as st
 
-from config import DEFAULT_MODEL, status as config_status
+from config import (
+    DEFAULT_MODEL,
+    DEFAULT_TEMPERATURE,
+    DEFAULT_TOP_P,
+    DEFAULT_MAX_TOKENS,
+    status as config_status,
+)
 from db import save_message, load_history, clear_history, get_all_sessions, save_feedback, ensure_schema
 from knowledge import load_sheet_rows, search_rows, format_rows_for_prompt
 from llm import stream_chat, build_system_prompt
@@ -268,18 +274,10 @@ if not st.session_state.messages:
 
 # ---------------- Sidebar ----------------
 with st.sidebar:
-    st.markdown("### Konfigurasi")
-
-    st.caption(f"Model: {DEFAULT_MODEL}")
     persona_name = st.selectbox(
-        "Persona / gaya bahasa", list(PERSONAS.keys()), index=0
+        "Persona / gaya bahasa", list(PERSONAS.keys()), index=0,
+        help="Karakter bot. Default Santai paling cocok buat layanan customer service.",
     )
-    temperature = st.slider(
-        "Temperature (kreativitas)", 0.0, 1.5, 0.7, 0.1,
-        help="Rendah = faktual/kaku. Tinggi = kreatif/liar.",
-    )
-    top_p = st.slider("Top-P (variasi kata)", 0.1, 1.0, 0.9, 0.05)
-    max_tokens = st.slider("Max token jawaban", 256, 4096, 1024, 128)
 
     st.divider()
     st.markdown("#### Memory (PostgreSQL)")
@@ -442,9 +440,9 @@ if incoming:
             gen = stream_chat(
                 api_messages,
                 model=DEFAULT_MODEL,
-                temperature=temperature,
-                top_p=top_p,
-                max_tokens=max_tokens,
+                temperature=DEFAULT_TEMPERATURE,
+                top_p=DEFAULT_TOP_P,
+                max_tokens=DEFAULT_MAX_TOKENS,
             )
             for piece in gen:
                 buffer += piece

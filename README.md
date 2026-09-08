@@ -105,16 +105,18 @@ Kolom fleksibel — bot membaca apapun headernya. Data di-cache ke PostgreSQL (`
 
 ---
 
-## Parameter kreatif (sidebar app)
+## Parameter model (di-kunci di `config.py`, bukan di UI)
 
-| Parameter | Rentang | Default | Efek |
-|---|---|---|---|
-| **Model** | `openai/gpt-oss-120b` (Groq) | — | Paten, bukan dropdown |
-| **Persona/gaya bahasa** | Santai / Profesional / Super singkat | Santai | Karakter & tone jawaban |
-| **Temperature** | 0.0 – 1.5 | 0.7 | Rendah = faktual, tinggi = kreatif |
-| **Top-P** | 0.1 – 1.0 | 0.9 | Variasi pemilihan kata |
-| **Max tokens** | 256 – 4096 | 1024 | Panjang maks jawaban |
-| **Session ID** | auto (8 char) | — | Kunci memory di DB |
+App dipakai customer / calon customer, jadi **tidak ada slider teknis di sidebar** (Temperature, Top-P, Max token, ganti model). Kalau mau diubah, edit konstanta di `config.py` lalu deploy ulang:
+
+| Konstanta | Default | Efek |
+|---|---|---|
+| `DEFAULT_MODEL` | `openai/gpt-oss-120b` (Groq) | Model LLM yang dipakai |
+| `DEFAULT_TEMPERATURE` | 0.7 | Rendah = faktual, tinggi = kreatif |
+| `DEFAULT_TOP_P` | 0.9 | Variasi pemilihan kata |
+| `DEFAULT_MAX_TOKENS` | 1024 | Panjang maks jawaban |
+
+Satu-satunya kontrol di sidebar: **Persona / gaya bahasa** (Santai / Profesional / Super singkat) — buat ganti karakter bot saat demo.
 
 ---
 

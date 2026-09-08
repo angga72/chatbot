@@ -76,6 +76,12 @@ SHEET_CSV_URL = _get(
 # Batas maksimum baris sheet yang dimuat ke konteks LLM
 MAX_KNOWLEDGE_ROWS = int(_get("MAX_KNOWLEDGE_ROWS", "300"))
 
+# Parameter kreatif LLM — DIKUNCI manual di sini (tidak ada slider di UI,
+# karena app dipakai customer / calon customer, bukan developer).
+DEFAULT_TEMPERATURE = float(_get("DEFAULT_TEMPERATURE", "0.7"))
+DEFAULT_TOP_P = float(_get("DEFAULT_TOP_P", "0.9"))
+DEFAULT_MAX_TOKENS = int(_get("DEFAULT_MAX_TOKENS", "1024"))
+
 
 def status() -> dict:
     """Ringkasan status konfigurasi (buat panel debug di UI). Tidak pernah expose nilai asli."""
