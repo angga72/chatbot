@@ -2,7 +2,7 @@
 
 Chatbot customer service berbasis AI untuk perusahaan **transporter/jasa pengangkutan Limbah B3** (Bahan Berbahaya dan Beracun). Bot menjawab pertanyaan customer soal kode limbah B3, karakteristik, kelayakan angkut, prosedur, dan layanan — dengan **gaya bahasa santai**, **knowledge base dari Google Sheet**, dan **memory percakapan di PostgreSQL**.
 
-Dibangun dengan Streamlit + DeepSeek LLM + Google Sheets + PostgreSQL.
+Dibangun dengan Streamlit + Groq LLM (gpt-oss-120b) + Google Sheets + PostgreSQL.
 
 ---
 
@@ -10,7 +10,7 @@ Dibangun dengan Streamlit + DeepSeek LLM + Google Sheets + PostgreSQL.
 
 ```
 ┌────────────────────┐      ┌─────────────────────────┐      ┌──────────────────┐
-│  Streamlit (UI)    │ ─── │  DeepSeek LLM (stream)  │ ─── │  Google Sheet    │
+│  Streamlit (UI)    │ ─── │  Groq LLM (stream)     │ ─── │  Google Sheet    │
 │  streamlit_app.py  │      │  llm.py / persona.py    │      │  (data kode B3)  │
 └────────┬───────────┘      └────────────┬────────────┘      └────────┬─────────┘
          │                               │                            │
@@ -26,7 +26,7 @@ Dibangun dengan Streamlit + DeepSeek LLM + Google Sheets + PostgreSQL.
 1. User ketik pertanyaan -> disimpan ke `chat_history` (PostgreSQL).
 2. Bot **cari data relevan** di Google Sheet (cocokkan kode limbah / kata kunci).
 3. Data cocok ditempel ke **system prompt** sebagai konteks.
-4. **DeepSeek** generate jawaban **streaming** -> tampil + disimpan ke DB.
+4. **Groq (gpt-oss-120b)** generate jawaban **streaming** -> tampil + disimpan ke DB.
 5. Buka sesi yang sama lagi -> riwayat dimuat dari DB (bot "ingat").
 
 ---
@@ -40,7 +40,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # isi .env (lihat .env.example)
-#   DEEPSEEK_API_KEY=...   DATABASE_URL=postgresql://user:pass@host:port/dbname
+#   GROQ_API_KEY=gsk_...   DATABASE_URL=postgresql://user:***@host:port/dbname
 #   SHEET_ID=...
 
 streamlit run streamlit_app.py
@@ -58,7 +58,7 @@ Tabel database **auto-dibuat** saat app start (tidak perlu setup manual).
    - Main file: `streamlit_app.py`
 3. Set **Secrets** di dashboard app (Settings -> Secrets):
    ```toml
-   DEEPSEEK_API_KEY = "sk-..."
+   GROQ_API_KEY = "gsk_..."
    DATABASE_URL = "postgresql://postgres.xxxx:password@aws-0-xxx.pooler.supabase.com:6543/postgres?sslmode=require"
    SHEET_ID = "1w3QAG-..."
    ```
@@ -109,7 +109,7 @@ Kolom fleksibel — bot membaca apapun headernya. Data di-cache ke PostgreSQL (`
 
 | Parameter | Rentang | Default | Efek |
 |---|---|---|---|
-| **Model** | `deepseek-v4-flash` / `deepseek-v4-pro` | flash | Pro lebih pintar, lebih lambat |
+| **Model** | `openai/gpt-oss-120b` (Groq) | — | Paten, bukan dropdown |
 | **Persona/gaya bahasa** | Santai / Profesional / Super singkat | Santai | Karakter & tone jawaban |
 | **Temperature** | 0.0 – 1.5 | 0.7 | Rendah = faktual, tinggi = kreatif |
 | **Top-P** | 0.1 – 1.0 | 0.9 | Variasi pemilihan kata |
@@ -126,7 +126,7 @@ Kolom fleksibel — bot membaca apapun headernya. Data di-cache ke PostgreSQL (`
 | `config.py` | Konfigurasi: env -> .env -> st.secrets |
 | `db.py` | Layer PostgreSQL (memory, cache, feedback, auto-schema) |
 | `knowledge.py` | Baca & filter data Google Sheet |
-| `llm.py` | Panggil DeepSeek (streaming) + susun system prompt |
+| `llm.py` | Panggil Groq (streaming) + susun system prompt |
 | `persona.py` | Definisi gaya bahasa bot |
 | `requirements.txt` | Dependencies |
 | `.env.example` | Template konfigurasi |

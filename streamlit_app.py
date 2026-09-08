@@ -1,5 +1,5 @@
 # ===== B3 Chatbot — Customer Service Transporter Limbah B3 =====
-# Stack: Streamlit + DeepSeek LLM + Google Sheet (knowledge) + PostgreSQL (memory)
+# Stack: Streamlit + Groq LLM (gpt-oss-120b) + Google Sheet (knowledge) + PostgreSQL (memory)
 #
 # Tampilan: gaya chat widget modern (header agen + status online, bubble dua arah,
 # quick-reply, typing indicator, timestamp) — BEBAS EMOJI.
@@ -322,8 +322,8 @@ with st.sidebar:
                 "**Cara set secrets (Cloud):** Settings -> Secrets, paste isi "
                 "`.streamlit/secrets.toml`. Semua key root-level (tanpa `[section]`)."
             )
-        if not cfg.get("DEEPSEEK_API_KEY"):
-            st.markdown("Isi `DEEPSEEK_API_KEY` di secrets dashboard.")
+        if not cfg.get("GROQ_API_KEY"):
+            st.markdown("Isi `GROQ_API_KEY` di secrets dashboard.")
 
 # ---------------- Render CSS + header ----------------
 st.markdown(CSS, unsafe_allow_html=True)

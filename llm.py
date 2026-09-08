@@ -24,7 +24,7 @@ def stream_chat(
     extra_system: str = "",
 ):
     """
-    Panggil DeepSeek dgn streaming. `messages` = list [{role, content}].
+    Panggil Groq (OpenAI-compatible) dgn streaming. `messages` = list [{role, content}].
     Generator: yield string per chunk.
     Di akhir yield, yield None? — TIDAK, lebih baik return penuh dari luar.
     """
