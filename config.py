@@ -10,7 +10,6 @@ from dotenv import load_dotenv
 # Load .env kalau ada (development lokal). Aman: .env ke-gitignore.
 load_dotenv()
 
-
 def _load_streamlit_secrets_toml():
     """
     Baca .streamlit/secrets.toml manual (fallback untuk environment non-Streamlit).
@@ -57,10 +56,10 @@ def _get(key: str, default: str = "") -> str:
     return default
 
 
-# DeepSeek API (OpenAI-compatible)
-DEEPSEEK_API_KEY = _get("DEEPSEEK_API_KEY")
-DEEPSEEK_BASE_URL = _get("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
-DEFAULT_MODEL = _get("DEFAULT_MODEL", "deepseek-v4-flash")
+# LLM API — Groq (OpenAI-compatible). Isi GROQ_API_KEY di .env / secrets dashboard.
+LLM_API_KEY = _get("GROQ_API_KEY") or _get("LLM_API_KEY")
+LLM_BASE_URL = _get("LLM_BASE_URL", "https://api.groq.com/openai/v1")
+DEFAULT_MODEL = _get("DEFAULT_MODEL", "openai/gpt-oss-120b")
 
 # PostgreSQL — WAJIB di-set via .env / secrets.
 #   Lokal (VPS Docker): postgresql://user:pass@127.0.0.1:35432/b3_chatbot
@@ -81,7 +80,7 @@ MAX_KNOWLEDGE_ROWS = int(_get("MAX_KNOWLEDGE_ROWS", "300"))
 def status() -> dict:
     """Ringkasan status konfigurasi (buat panel debug di UI). Tidak pernah expose nilai asli."""
     return {
-        "DEEPSEEK_API_KEY": bool(DEEPSEEK_API_KEY),
+        "GROQ_API_KEY": bool(LLM_API_KEY),
         "DATABASE_URL": bool(DATABASE_URL),
         "SHEET_ID": bool(SHEET_ID),
     }

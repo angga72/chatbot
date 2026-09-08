@@ -1,9 +1,9 @@
-# ===== LLM layer: DeepSeek (OpenAI-compatible) =====
+# ===== LLM layer: Groq (OpenAI-compatible) — model gpt-oss-120b =====
 import json
 
 from openai import OpenAI
 
-from config import DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL
+from config import LLM_API_KEY, LLM_BASE_URL
 
 _client = None
 
@@ -11,7 +11,7 @@ _client = None
 def get_client() -> OpenAI:
     global _client
     if _client is None:
-        _client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url=DEEPSEEK_BASE_URL)
+        _client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL)
     return _client
 
 

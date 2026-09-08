@@ -260,12 +260,7 @@ if not st.session_state.messages:
 with st.sidebar:
     st.markdown("### Konfigurasi")
 
-    model = st.selectbox(
-        "Model LLM",
-        ["deepseek-v4-flash", "deepseek-v4-pro"],
-        index=0,
-        help="Flash = cepat dan hemat. Pro = lebih pintar, lebih lambat.",
-    )
+    st.caption(f"Model: {DEFAULT_MODEL}")
     persona_name = st.selectbox(
         "Persona / gaya bahasa", list(PERSONAS.keys()), index=0
     )
@@ -281,12 +276,12 @@ with st.sidebar:
     if not DB_OK:
         st.warning("Database tidak tersambung. Memory hanya bertahan selama sesi ini.")
     st.caption(f"Session ID: `{st.session_state.session_id}`")
-    if st.button("Sesi baru", use_container_width=True):
+    if st.button("Sesi baru", width="stretch"):
         st.session_state.session_id = str(uuid.uuid4())[:8]
         st.session_state.messages = []
         st.session_state.feedback_given = True
         st.rerun()
-    if st.button("Hapus riwayat sesi ini", use_container_width=True):
+    if st.button("Hapus riwayat sesi ini", width="stretch"):
         db_clear()
         st.session_state.messages = []
         st.session_state.feedback_given = True
@@ -303,7 +298,7 @@ with st.sidebar:
 
     st.divider()
     st.markdown("#### Status data")
-    if st.button("Muat ulang data sheet", use_container_width=True):
+    if st.button("Muat ulang data sheet", width="stretch"):
         st.session_state.sheet_rows = None
         st.rerun()
     with st.expander("Status knowledge base (Google Sheet)"):
@@ -313,7 +308,7 @@ with st.sidebar:
         if meta.get("columns"):
             st.write(f"**Kolom:** {', '.join(meta['columns'])}")
         if rows:
-            st.dataframe(rows[:20], use_container_width=True, hide_index=True)
+            st.dataframe(rows[:20], width="stretch", hide_index=True)
         else:
             st.info("Sheet masih kosong atau belum diisi.")
 
@@ -378,7 +373,7 @@ if show_welcome:
     st.markdown(welcome_html, unsafe_allow_html=True)
     cols = st.columns(len(QUICK_REPLIES))
     for col, (label, q) in zip(cols, QUICK_REPLIES):
-        if col.button(label, key=f"qr_{label}", use_container_width=True):
+        if col.button(label, key=f"qr_{label}", width="stretch"):
             st.session_state.pending_prompt = q
             st.rerun()
     st.caption("Tip: kirim kode limbah (misal A102d) biar dicek ke daftar layanan.")
@@ -436,7 +431,7 @@ if incoming:
             placeholder.markdown(typing_html, unsafe_allow_html=True)
             gen = stream_chat(
                 api_messages,
-                model=model,
+                model=DEFAULT_MODEL,
                 temperature=temperature,
                 top_p=top_p,
                 max_tokens=max_tokens,
